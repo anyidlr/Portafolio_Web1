@@ -1,0 +1,43 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+.capa1
+{
+	margin-left: 15%; /* Con esta configuración, se crea una barra lateral izquierda de navegación */
+	padding: 12px;
+	height: 1000px;
+}
+li a{
+    display: block;
+    background-color: #bee9f0;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    background-color:#244347;
+    color: #9ac5cc ;
+}
+li a.activo{
+    background-color:#244347 ;
+    color: #9ac5cc;
+}
+h1
+{
+  font-family: "Big Shoulders Stencil", system-ui, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+p.big-shoulders-<uniquifier> {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}font-family: "Big Shoulders Stencil", system-ui, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
