@@ -1,0 +1,49 @@
+.capa1
+{
+	margin-left: 15%; /* Con esta configuración, se crea una barra lateral izquierda de navegación */
+	padding: 12px;
+	height: 1000px;
+}
+ul {
+    list-style-type: none; /*Esta función da estilo a las viñetas de la lista, con 'none', estas desaparecen*/
+	margin: 0;
+	padding: 0;
+	width: 20%;
+	height: 100%;
+	position: fixed; /*Mantiene la lista a la izquierda de la pantalla siempre*/
+	background-color: #bee9f0;
+	overflow: auto;
+}
+li a{
+    display: block;
+    background-color: #bee9f0;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    background-color:#244347;
+    color: #9ac5cc ;
+}
+li a.activo{
+    background-color:#244347 ;
+    color: #9ac5cc;
+}
+.capa1{
+    margin-left: 25%;
+    padding: 12px;
+    height: 1000px;
+}
+h1
+{
+  font-family: "Big Shoulders Stencil", system-ui, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+p
+{
+  font-family: "Big Shoukders Stencil", system-ui, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

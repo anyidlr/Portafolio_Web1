@@ -6,7 +6,7 @@ ul {
 }
 .capa1
 {
-	margin-left: 15%; /* Con esta configuración, se crea una barra lateral izquierda de navegación */
+	margin-left: 15%;
 	padding: 12px;
 	height: 1000px;
 }
@@ -27,17 +27,14 @@ li a.activo{
 }
 h1
 {
-  font-family: "Big Shoulders Stencil", system-ui, sans-serif;
+  font-family: "Big Shoulders Stencil", sans-serif, system-ui,;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
-p.big-shoulders-<uniquifier> {
-  font-family: "Big Shoulders", sans-serif;
+p{
+  font-family: "Big Shoulders", sans-serif, system-ui;
   font-optical-sizing: auto;
   font-weight: <weight>;
-  font-style: normal;
-}font-family: "Big Shoulders Stencil", system-ui, sans-serif;
-  font-weight: 400;
   font-style: normal;
 }
