@@ -1,0 +1,41 @@
+.h1
+ {
+  height: 150px;
+}
+
+.imagen 
+{
+  border: 3px solid #bed5e4;
+  border-radius: 10px;
+}
+
+.galeria
+ {
+  text-align: center;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.mostrar 
+{
+  width: 30%;
+  border: 2px solid black;
+  padding: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #bed5e4;
+  color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.mostrar:hover 
+{
+  background-color: #bce5ff;
+  color: #bed5e4;
+}
+
+.chido:hover .mostrar:hover ~ .contenedor .h1
+ {
+  display: none;
+}
