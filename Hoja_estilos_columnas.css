@@ -1,0 +1,25 @@
+.columnas
+{
+	/*column-count: 3;  Indica en cuántas columnas se separa el div con la clase columnas*/
+	column-gap: 20px; /*Espacio entre cada columna*/	
+	column-rule-style: dotted; /*Define el tipo de separación entre columnas*/
+	column-rule-color: rgb(29, 58, 102); /*Define el color de la separación entre columnas*/
+	column-rule-width: 2px; /*Define el grosor de la separación*/
+	/*column-width: 150px; Permite que la página se acomode a la ventana, si ésta es muy chica, se acortan las columnas*/
+	columns: 150px 3; /*Junta las propiedades column-count y width*/
+}	
+p
+{
+	text-align: justify;
+}
+.titulo2
+{	
+	text-align: center;
+	column-span: all; 
+	/*Cumple con la condición de unificar la filas para el título, esto también se puede lograr
+	sacando el título del div*/
+}
+#imagen
+{
+	visibility: visible; /*Permite que la imagen se muestre en todo momento*/
+}

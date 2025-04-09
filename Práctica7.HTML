@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="Imágenes/poli.png"> 
+	<link rel="stylesheet" type="text/css" href="Hoja_estilos_columnas.css">
+	<title>Columnas con CSS</title>
+</head>
+<body>
+	<div class="columnas">
+		<h2 class="titulo2">Columnas con CSS</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<img src="Imágenes/poli.png" id="imagen"><br>
+	<button onclick="ocultar()" ondblclick="mostrar()">Mostrar/Ocultar</button> <!--onclick permite activar un evento de click para el botón, ondblclick permite activar otro evento con un doble click, lo que va dentro de las comillas es una función, que se define en .html usando javascript o en una hoja externa usando .js .-->
+	<script type="text/javascript">
+		function ocultar()
+		{
+			document.getElementById("imagen").style.visibility="hidden"; /*Se referencia al id de la imagen, y se agregan las propiedades que se requieren*/
+		}
+
+		function mostrar()
+		{
+			document.getElementById("imagen").style.visibility="visible";
+		}
+		/*
+		Toda esta configuración es para ocultar una imagen previamente mostrada en la página con un click, y mostrarla nuevamente mediante dos clicks, a veces funcion de forma "curiosa"
+		*/
+	</script>
+</body>
+</html>
