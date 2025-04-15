@@ -45,11 +45,73 @@
     <div class="circle"></div>
     <p class="text">Pasteleria Marcella</p>
   </div>
-
-
-
-
-
+      <style>
+        .seccion {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
+            width: 400px;
+            padding: 20px;
+            background: black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .imagen {
+            text-align: center;
+        }
+        .imagen img {
+            width: 120px;
+            height: 150px;
+            border-radius: 5px;
+        }
+                body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .faq {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .faq h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-item h3 {
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+        .faq-item p {
+            margin: 0;
+            color: #555;
+        }
+        .redes-sociales {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .redes-sociales a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .redes-sociales a:hover {
+            background-color: #0056b3;
+        }
+    </style>
   <!-- 
     - #TOP BAR
   -->
@@ -715,8 +777,78 @@
         
         </div>
       </section>
+      <h2 class="headline-1 section-title">Nuestros Chefs</h2><br>
+      <table style="padding-left: 50px;">
+          <th>
+            <div class="seccion">
+            <h2>Sofía Méndez</h2>
+            <p><strong>Especialidad:</strong> Pastelería moderna y minimalista</p>
+            <p><strong>Experiencia:</strong> 12 años</p>
+            <p><strong>Descripción:</strong> Sofía crea postres elegantes con sabores equilibrados y diseños minimalistas.</p>
+        <h2>Foto</h2>
+        <div class="imagen" style="padding-left: 120px;">
+            
+            <img src="assets/images/Sofia.jpg" alt="Foto de Sofía">
+        </div> 
+        </div>
+          </th>
+          <th>
+        <div class="seccion">
+            <h2>Daniel Rojas</h2>
+            <p><strong>Especialidad:</strong> Pastelería artesanal y técnicas tradicionales</p>
+            <p><strong>Experiencia:</strong> 20 años</p>
+            <p><strong>Descripción:</strong> Daniel perfecciona técnicas clásicas y se especializa en croissants y tartas frutales.</p>
+        <h2>Foto</h2>
+        <div class="imagen" style="padding-left: 120px;">
+            
+            <img src="assets/images/Daniel.jpg" alt="Foto de Daniel">
+        </div>
+      </div>            
+          </th>
+          <th>
+        <div class="seccion">
+            <h2>Valentina Russo</h2>
+            <p><strong>Especialidad:</strong> Combinaciones innovadoras de sabores</p>
+            <p><strong>Experiencia:</strong> 8 años</p>
+            <p><strong>Descripción:</strong> Valentina experimenta con ingredientes exóticos como lavanda, pistacho y especias orientales.</p>
+        <h2>Foto</h2>
+        <div class="imagen" style="padding-left: 120px;">
+            
+            <img src="assets/images/Valentina.jpg" alt="Foto de Valentina">
+        </div>
+      </div>            
+          </th>
+    </table>
+        <div class="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <h3>1. ¿Qué tipos de pasteles ofrecen?</h3>
+            <p>Ofrecemos pasteles personalizados, tradicionales, de boda, cumpleaños y pasteles sin gluten.</p>
+        </div>
+        <div class="faq-item">
+            <h3>2. ¿Cuánto tiempo antes debo hacer un pedido?</h3>
+            <p>Recomendamos hacer pedidos al menos con una semana de anticipación para pasteles personalizados.</p>
+        </div>
+        <div class="faq-item">
+            <h3>3. ¿Tienen opciones veganas?</h3>
+            <p>¡Sí! Contamos con una variedad de pasteles veganos hechos con ingredientes de origen vegetal.</p>
+        </div>
+        <div class="faq-item">
+            <h3>4. ¿Realizan envíos a domicilio?</h3>
+            <p>Ofrecemos servicio de entrega a domicilio dentro de un radio de 20 km de nuestra pastelería.</p>
+        </div>
+        <div class="faq-item">
+            <h3>5. ¿Cómo puedo personalizar un pastel?</h3>
+            <p>Puede elegir el sabor, el diseño y los mensajes personalizados. Contáctenos para más detalles.</p>
+        </div>
 
-     
+        <div class="redes-sociales">
+            <h2>Síguenos en Redes Sociales</h2>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+    </div>
 
   <!-- 
     - boton volver a inicio
@@ -738,5 +870,4 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>
