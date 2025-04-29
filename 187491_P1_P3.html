@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operacionees con JavaScript</title>
+	<script type="text/javascript">
+		function sumar() 
+		{
+			var n1 = document.getElementById("num1").value; //Obtiene los valores de los elementos mediante el id.
+			var n2 = document.getElementById("num2").value; //Con var se declara una variable.
+			var resul = parseInt(n1) + parseInt(n2); //parseInt() convierte valores a enteros, esto para evitar la concatenación en el resultado.
+			document.getElementById("resul").innerHTML = resul; //.innerHTML = imprime la variable a la cual se iguala.
+		}
+		function restar()
+		{
+			var n1 = document.getElementById("num1").value
+			var n2 = document.getElementById("num2").value; 
+			var resul = parseInt(n1) - parseInt(n2);
+			document.getElementById("resul").innerHTML = resul;
+		}
+		function multi()
+		{
+			var n1 = document.getElementById("num1").value
+			var n2 = document.getElementById("num2").value; 
+			var resul = parseFloat(n1)*parseFloat(n2);
+			document.getElementById("resul").innerHTML = resul;			
+		}
+		function divi()
+		{
+			var n1 = document.getElementById("num1").value
+			var n2 = document.getElementById("num2").value; 
+			var resul = parseFloat(n1)/parseFloat(n2);
+			document.getElementById("resul").innerHTML = resul;			
+		}
+	</script>
+	<style type="text/css">
+		.z
+		{
+			text-align: center;
+			color: #244347 ;
+		}
+		.f
+		{
+			text-align: center;
+		}
+		.a
+		{
+			background-color: #87acb0 ;
+		}
+		.b
+		{	
+			background-color: #9bcfd5 ;
+			color: black;
+		}	
+	</style>
+</head>
+<body style="background: #b9b9b9 ;">
+	<h1 class="z">Menú de operaciones</h1>
+	<form class="f">
+		<label for="num1" class="a">Número:</label>
+		<input type="text" name="num1" id="num1" class="b" placeholder="Número 1"><br/>
+		<label for="num2" class="a">Número:</label>
+		<input type="text" name="num2" id="num2" class="b" placeholder="Número 2"><br/><br>
+		<input type="button" name="suma" id="suma" value="Sumar" onclick="sumar()">
+		<input type="button" name="resta" id="resta" value="Restar" onclick="restar()">
+		<input type="button" name="mult" id="mult" value="Multiplicar" onclick="multi()">
+		<input type="button" name="div" id="div" value="Dividir" onclick="divi()"><br/><br>
+		El resultado es:
+		<p id="resul" name="name"></p>
+	</form>
+</body>
+</html>
