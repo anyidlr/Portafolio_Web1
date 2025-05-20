@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Propina</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Calcula tu  Propina</h2>
+        <form id="form">
+            <label for="subtotal">Total a pagar:</label>
+            <input type="number" id="subtotal" required>
+
+            <label for="Porcentaje">Porcentaje a aplicar:</label>
+            <input list="Porcentajes" id="Porcentaje" type="number" required>
+            <datalist id="Porcentajes">
+                <option value="5"></option>
+                <option value="10"></option>
+                <option value="15"></option>
+                <option value="20"></option>
+            </datalist>
+
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="JS.js"></script>
+</body>
+</html>
