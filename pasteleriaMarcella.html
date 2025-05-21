@@ -45,73 +45,11 @@
     <div class="circle"></div>
     <p class="text">Pasteleria Marcella</p>
   </div>
-      <style>
-        .seccion {
-            margin-bottom: 15px;
-            padding: 10px;
-            border-bottom: 2px solid #ccc;
-            width: 400px;
-            padding: 20px;
-            background: black;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .imagen {
-            text-align: center;
-        }
-        .imagen img {
-            width: 120px;
-            height: 150px;
-            border-radius: 5px;
-        }
-                body {
-            font-family: Arial, sans-serif;
-            background-color: black;
-            margin: 0;
-            padding: 0;
-        }
-        .faq {
-            width: 80%;
-            margin: 20px auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            padding: 20px;
-        }
-        .faq h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .faq-item {
-            margin-bottom: 15px;
-        }
-        .faq-item h3 {
-            color: #007bff;
-            margin-bottom: 5px;
-        }
-        .faq-item p {
-            margin: 0;
-            color: #555;
-        }
-        .redes-sociales {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .redes-sociales a {
-            display: inline-block;
-            margin: 10px;
-            text-decoration: none;
-            font-size: 18px;
-            color: #fff;
-            background-color: #007bff;
-            padding: 10px 15px;
-            border-radius: 5px;
-        }
-        .redes-sociales a:hover {
-            background-color: #0056b3;
-        }
-    </style>
+
+
+
+
+
   <!-- 
     - #TOP BAR
   -->
@@ -125,7 +63,7 @@
         </div>
 
         <span class="span">
-          direccion de la pasteleria
+          Av. Valentin Amador 815
         </span>
       </address>
 
@@ -154,7 +92,7 @@
           <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
         </div>
 
-        <span class="span">aaaaaa@restaurante.com</span>
+        <span class="span">pasteleriamarcela@gmail.com</span>
       </a>
 
     </div>
@@ -172,7 +110,7 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="" width="160" height="50" alt="logo">
+        <img src="./assets/images/logo.png" width="160" height="50" alt="logo">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -204,7 +142,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#about" class="navbar-link hover-underline">
+            <a href="#nosotros" class="navbar-link hover-underline">
               <div class="separator"></div>
 
               <span class="span">Nosotros</span>
@@ -212,18 +150,18 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
+            <a href="#fyq" class="navbar-link hover-underline">
               <div class="separator"></div>
 
-              <span class="span">Nuestros chefs</span>
+              <span class="span">Preguntas</span>
             </a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
+            <a href="./formulario_cotizaciones.html" class="navbar-link hover-underline">
               <div class="separator"></div>
 
-              <span class="span">Contacto</span>
+              <span class="span">Cotizaciones</span>
             </a>
           </li>
 
@@ -252,7 +190,7 @@
 
       </nav>
 
-      <a href="#" class="btn btn-secondary">
+      <a href="#conta" class="btn btn-secondary">
         <span class="text text-1">Contactanos</span>
 
         <span class="text text-2" aria-hidden="true">Contactanos</span>
@@ -380,7 +318,7 @@
         - #SERVICE
       -->
 
-      <section class="section service bg-black-10 text-center" aria-label="service">
+      <section class="section service bg-black-10 text-center" aria-label="service" id="nosotros">
         <div class="container">
 
           <p class="section-subtitle label-2">Sabores para la realeza</p>
@@ -757,111 +695,326 @@
           
       </div>
 
+  <!-- 
+        - #fyq
+      -->
+
+
+    <section class="section service bg-black-10 text-center" aria-label="service" id="fyq">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Atención personalizada</p>
+          <h2 class="headline-1 section-title">Resuelve tus dudas con nosotros</h2>
+
+         <div class="categorias" id="categorias">
+			<div class="categoria activa" data-categoria="metodos-pago">
+				<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12.836,.029C9.371-.205,5.962,1.065,3.509,3.521,1.057,5.976-.211,9.378,.029,12.854c.441,6.354,6.053,11.146,13.054,11.146h5.917c2.757,0,5-2.243,5-5v-6.66C24,5.862,19.097,.454,12.836,.029Zm.164,16.971v1c0,.552-.447,1-1,1s-1-.448-1-1v-1h-.268c-1.067,0-2.063-.574-2.598-1.499-.277-.478-.113-1.089,.364-1.366,.479-.278,1.09-.114,1.366,.365,.179,.308,.511,.5,.867,.5h2.268c.552,0,1-.449,1-1,0-.378-.271-.698-.644-.76l-3.041-.507c-1.342-.223-2.315-1.373-2.315-2.733,0-1.654,1.346-3,3-3v-1c0-.552,.447-1,1-1s1,.448,1,1v1h.268c1.067,0,2.063,.575,2.598,1.5,.277,.478,.113,1.089-.364,1.366-.48,.277-1.091,.113-1.366-.365-.179-.309-.511-.5-.867-.5h-2.268c-.552,0-1,.449-1,1,0,.378,.271,.698,.644,.76l3.041,.507c1.342,.223,2.315,1.373,2.315,2.733,0,1.654-1.346,3-3,3Z"/></svg>
+				<p>Compras y Pedidos</p>
+			</div>
+			<div class="categoria" data-categoria="entregas">
+				<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="m4 4c0-.553.448-1 1-1h1.812c1.039-1.79 2.973-3 5.188-3 2.967 0 5.431 2.167 5.91 5h-12.91c-.552 0-1-.447-1-1zm13.91 3c-.478 2.833-2.942 5-5.91 5s-5.431-2.167-5.91-5h11.819zm-3.91 6h-4c-4.411 0-8 3.589-8 8v2c0 .553.448 1 1 1h4.5c-.828 0-1.5-.672-1.5-1.5v-1.5h4s0 1 1 1h2s1 .105 1-1h4v1.5c0 .828-.672 1.5-1.5 1.5h4.5c.552 0 1-.447 1-1v-2c0-4.411-3.589-8-8-8zm4 6h-12v-1.5c0-.828.672-1.5 1.5-1.5h2.5s0 1 1 1h2s1 .105 1-1h2.5c.828 0 1.5.672 1.5 1.5z"/></svg>
+				<p>Envíos y Entregas</p>
+			</div>
+			<div class="categoria" data-categoria="seguridad">
+				<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077Z"/><circle cx="7" cy="22" r="2"/><circle cx="17" cy="22" r="2"/></svg>
+				<p>Pagos y Facturación</p>
+			</div>
+			<div class="categoria" data-categoria="cuenta">
+				<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23,11a1,1,0,0,1-1-1,8.008,8.008,0,0,0-8-8,1,1,0,0,1,0-2A10.011,10.011,0,0,1,24,10,1,1,0,0,1,23,11Zm-3-1a6,6,0,0,0-6-6,1,1,0,1,0,0,2,4,4,0,0,1,4,4,1,1,0,0,0,2,0Zm2.183,12.164.91-1.049a3.1,3.1,0,0,0,0-4.377c-.031-.031-2.437-1.882-2.437-1.882a3.1,3.1,0,0,0-4.281.006l-1.906,1.606A12.784,12.784,0,0,1,7.537,9.524l1.6-1.9a3.1,3.1,0,0,0,.007-4.282S7.291.939,7.26.908A3.082,3.082,0,0,0,2.934.862l-1.15,1C-5.01,9.744,9.62,24.261,17.762,24A6.155,6.155,0,0,0,22.183,22.164Z"/></svg>
+				<p>Atención al Cliente</p>
+			</div>
+		</div>
+
+      <div class="preguntas">
+
+			<!-- Preguntas Metodos de pago -->
+			<div class="contenedor-preguntas activo" data-categoria="metodos-pago">
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿Cómo puedo realizar un pedido? <img src="./assets/icons/suma.svg" alt="Abrir Respuesta" /></p>
+					<p class="respuesta">Puedes realizar tu pedido directamente desde nuestra página web. Solo agrega los productos al carrito, completa tus datos y elige el método de pago. ¡Listo! Recibirás un correo de confirmación.</p>
+				</div>
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿Puedo modificar o cancelar mi pedido después de realizarlo? <img src="./assets/icons/suma.svg" alt="Abrir Respuesta" /></p>
+					<p class="respuesta">Sí, puedes modificar o cancelar tu pedido dentro de las primeras 2 horas después de haberlo hecho. Solo contáctanos a través de nuestro chat en línea o por correo electrónico.</p>
+				</div>
+			</div>
+
+			<!-- Preguntas Entregas -->
+			<div class="contenedor-preguntas" data-categoria="entregas">
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿Cuánto tarda en llegar mi pedido? <img src="./assets/icons/suma.svg" alt="Abrir Respuesta" /></p>
+					<p class="respuesta">El tiempo de entrega depende de tu ubicación. En envíos locales tarda de 2 a 4 días hábiles y en envíos nacionales de 5 a 7 días hábiles.</p>
+				</div>
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿Puedo rastrear mi pedido? <img src="./assets/icons/suma.svg" alt="Abrir Respuesta" /></p>
+					<p class="respuesta">Claro que sí. Una vez que tu pedido sea enviado, recibirás un correo con tu número de guía y un enlace para rastrear tu paquete en todo momento.</p>
+				</div>
+			</div>
+
+			<!-- Preguntas Seguridad -->
+			<div class="contenedor-preguntas" data-categoria="seguridad">
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿Qué métodos de pago aceptan? <img src="./assets/icons/suma.svg" alt="Abrir Respuesta" /></p>
+					<p class="respuesta">Aceptamos pagos con tarjetas de crédito, débito, transferencias bancarias y PayPal. También puedes pagar en efectivo en tiendas participantes.</p>
+				</div>
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿Puedo solicitar factura de mi compra? <img src="./assets/icons/suma.svg" alt="Abrir Respuesta" /></p>
+					<p class="respuesta">Sí, al finalizar tu compra tienes la opción de ingresar tus datos fiscales y recibir tu factura en un máximo de 24 horas hábiles.</p>
+				</div>
+			</div>
+
+			<!-- Preguntas Cuenta -->
+			<div class="contenedor-preguntas" data-categoria="cuenta">
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿Cómo puedo contactar al servicio al cliente? <img src="./assets/icons/suma.svg" alt="Abrir Respuesta" /></p>
+					<p class="respuesta">Puedes contactarnos por medio de nuestro chat en línea, enviarnos un correo a pasteleriamarcela@gmail.com o escribirnos por WhatsApp al número que aparece en la parte inferior de la página.</p>
+				</div>
+				<div class="contenedor-pregunta">
+					<p class="pregunta">¿En qué horario brindan atención? <img src="./assets/icons/suma.svg" alt="Abrir Respuesta" /></p>
+					<p class="respuesta">Nuestro horario de atención es de lunes a sabado de 08:00 a.m. a 18:00 p.m.</p>
+				</div>
+			</div>
+
+		</div>
+
+          
+
+        </div>
+      </section>
+
+       <!-- 
+        - testimonios
+      -->
+
+      <section class="section testi text-center has-bg-image" style="background-image: url('./assets/images/testimonio.jpg'); " aria-label="testimonials" >
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Los pasteles son una verdadera obra de arte. Pedí uno para el cumpleaños de mi mamá y quedó encantada, tanto por el sabor como por lo hermoso que estaba.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
+              class="img">
+
+            <p class="label-2 profile-name">Rafael Cruz</p>
+          </div>
+
+        </div>
+      </section>
+
+       <!-- 
+        - reservacion
+      -->
+
+      <section class="reservation" id="conta">
+  <div class="container">
+
+    <div class="form reservation-form bg-black-10">
+
+      <form action="https://formspree.io/f/xzzrkorj" method="POST" class="form-left">
+
+        <h2 class="headline-1 text-center">Haz tu Pedido en Línea</h2>
+
+        <p class="form-text text-center">
+          Solicita tu pastel al <a href="tel:+88123123456" class="link">+52 444 539 2703</a>
+          o llena el siguiente formulario
+        </p>
+
+        <div class="input-wrapper">
+          <input type="text" name="name" placeholder="Tu Nombre" autocomplete="off" class="input-field">
+          <input type="tel" name="phone" placeholder="Número de Teléfono" autocomplete="off" class="input-field">
+        </div>
+
+        <div class="input-wrapper">
+
+          <div class="icon-wrapper">
+            <ion-icon name="ice-cream-outline" aria-hidden="true"></ion-icon>
+            <select name="product" class="input-field">
+              <option value="pastel-chocolate">Pastel de Chocolate</option>
+              <option value="pastel-vainilla">Pastel de Vainilla</option>
+              <option value="pastel-frutas">Pastel de Frutas</option>
+              <option value="cupcakes">Cupcakes</option>
+              <option value="cheesecake">Cheesecake</option>
+              <option value="otro">Otro (especificar en mensaje)</option>
+            </select>
+            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+          </div>
+
+          <div class="icon-wrapper">
+            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+            <input type="date" name="delivery-date" class="input-field">
+            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+          </div>
+
+          <div class="icon-wrapper">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+            <select name="delivery-time" class="input-field">
+              <option value="09:00am">09:00 am</option>
+              <option value="10:00am">10:00 am</option>
+              <option value="11:00am">11:00 am</option>
+              <option value="12:00pm">12:00 pm</option>
+              <option value="01:00pm">01:00 pm</option>
+              <option value="02:00pm">02:00 pm</option>
+              <option value="03:00pm">03:00 pm</option>
+              <option value="04:00pm">04:00 pm</option>
+              <option value="05:00pm">05:00 pm</option>
+              <option value="06:00pm">06:00 pm</option>
+            </select>
+            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+          </div>
+
+        </div>
+
+        <textarea name="message" placeholder="Detalles del pedido, dedicatoria o sabores preferidos" autocomplete="off" class="input-field"></textarea>
+
+        <button type="submit" class="btn btn-secondary">
+          <span class="text text-1">Enviar Pedido</span>
+          <span class="text text-2" aria-hidden="true">Enviar Pedido</span>
+        </button>
+
+      </form>
+
+      <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+        <h2 class="headline-1 text-center">Contáctanos</h2>
+
+        <p class="contact-label">Solicita tu pastel</p>
+        <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+52 444 539 2703</a>
+
+        <div class="separator"></div>
+
+        <p class="contact-label">Ubicación</p>
+        <address class="body-4">
+          Av. Valentin Amador 815, <br>
+          78300 San Luis Potosí
+        </address>
+
+        <p class="contact-label">Horarios</p>
+        <p class="body-4">
+          Lunes a Sabado <br>
+          09:00 am - 18:00 pm
+        </p>
+
+        <p class="contact-label">Entregas a Domicilio</p>
+        <p class="body-4">
+          Disponible en pedidos mayores a 2 pasteles o bajo disponibilidad.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+ <section style="margin: 60px;"></section>
        <!-- 
         - #mapita
       -->
 
-      <section class="mapita" aria-label="mapita">
-        <div class="container">
+      <section class="special-dish text-center" aria-labelledby="map-label" id="visi">
 
-          <p class="section-subtitle label-2">Sabores para la realeza</p>
+  <div class="special-dish-content bg-black-10">
+    <div class="container">
 
-          <h2 class="headline-1 section-title">Ofrecemos la mejor calidad</h2>
+      <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
 
-          <div class="box">
-            <h1>our location</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni deserunt quae suscipit laborum perspiciatis ipsam sit vel quasi ad nam modi recusandae omnis, maxime molestiae hic nemo. Libero, ea assumenda?</p>
-          </div>
+      <p class="section-subtitle label-2">Ubicación</p>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.1377963867667!2d-100.96148649999999!3d22.158826200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa1f464d2d10f%3A0xf08c4782bca2f6!2sMarcella%20Pasteler%C3%ADa!5e0!3m2!1ses-419!2smx!4v1743981152809!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-        </div>
-      </section>
-      <h2 class="headline-1 section-title">Nuestros Chefs</h2><br>
-      <table style="padding-left: 50px;">
-          <th>
-            <div class="seccion">
-            <h2>Sofía Méndez</h2>
-            <p><strong>Especialidad:</strong> Pastelería moderna y minimalista</p>
-            <p><strong>Experiencia:</strong> 12 años</p>
-            <p><strong>Descripción:</strong> Sofía crea postres elegantes con sabores equilibrados y diseños minimalistas.</p>
-        <h2>Foto</h2>
-        <div class="imagen" style="padding-left: 120px;">
-            
-            <img src="assets/images/Sofia.jpg" alt="Foto de Sofía">
-        </div> 
-        </div>
-          </th>
-          <th>
-        <div class="seccion">
-            <h2>Daniel Rojas</h2>
-            <p><strong>Especialidad:</strong> Pastelería artesanal y técnicas tradicionales</p>
-            <p><strong>Experiencia:</strong> 20 años</p>
-            <p><strong>Descripción:</strong> Daniel perfecciona técnicas clásicas y se especializa en croissants y tartas frutales.</p>
-        <h2>Foto</h2>
-        <div class="imagen" style="padding-left: 120px;">
-            
-            <img src="assets/images/Daniel.jpg" alt="Foto de Daniel">
-        </div>
-      </div>            
-          </th>
-          <th>
-        <div class="seccion">
-            <h2>Valentina Russo</h2>
-            <p><strong>Especialidad:</strong> Combinaciones innovadoras de sabores</p>
-            <p><strong>Experiencia:</strong> 8 años</p>
-            <p><strong>Descripción:</strong> Valentina experimenta con ingredientes exóticos como lavanda, pistacho y especias orientales.</p>
-        <h2>Foto</h2>
-        <div class="imagen" style="padding-left: 120px;">
-            
-            <img src="assets/images/Valentina.jpg" alt="Foto de Valentina">
-        </div>
-      </div>            
-          </th>
-    </table>
-        <div class="faq">
-        <h2>Preguntas Frecuentes</h2>
-        <div class="faq-item">
-            <h3>1. ¿Qué tipos de pasteles ofrecen?</h3>
-            <p>Ofrecemos pasteles personalizados, tradicionales, de boda, cumpleaños y pasteles sin gluten.</p>
-        </div>
-        <div class="faq-item">
-            <h3>2. ¿Cuánto tiempo antes debo hacer un pedido?</h3>
-            <p>Recomendamos hacer pedidos al menos con una semana de anticipación para pasteles personalizados.</p>
-        </div>
-        <div class="faq-item">
-            <h3>3. ¿Tienen opciones veganas?</h3>
-            <p>¡Sí! Contamos con una variedad de pasteles veganos hechos con ingredientes de origen vegetal.</p>
-        </div>
-        <div class="faq-item">
-            <h3>4. ¿Realizan envíos a domicilio?</h3>
-            <p>Ofrecemos servicio de entrega a domicilio dentro de un radio de 20 km de nuestra pastelería.</p>
-        </div>
-        <div class="faq-item">
-            <h3>5. ¿Cómo puedo personalizar un pastel?</h3>
-            <p>Puede elegir el sabor, el diseño y los mensajes personalizados. Contáctenos para más detalles.</p>
-        </div>
+      <h2 class="headline-1 section-title">¿Dónde Encontrarnos?</h2>
 
-        <div class="redes-sociales">
-            <h2>Síguenos en Redes Sociales</h2>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            <a href="https://www.twitter.com" target="_blank">Twitter</a>
-        </div>
+      <p class="section-text">
+        Visítanos en nuestra sucursal física para disfrutar de todos nuestros postres recién hechos, o haz tu pedido y recógelo en tienda. ¡Te esperamos!
+      </p>
+
+      <div class="wrapper">
+        <span class="span body-1">Marcella Pastelería, SLP</span>
+      </div>
+
+      <a href="https://www.google.com/maps/place/Marcella+Pastelería/@22.1588262,-100.9614865,17z/data=!3m1!4b1!4m6!3m5!1s0x842aa1f464d2d10f:0xf08c4782bca2f6!8m2!3d22.1588262!4d-100.9614865!16s%2Fg%2F11cmsq2ntt?entry=ttu" target="_blank" class="btn btn-primary">
+        <span class="text text-1">Abrir en Google Maps</span>
+        <span class="text text-2" aria-hidden="true">Abrir en Google Maps</span>
+      </a>
+
     </div>
+  </div>
+    <div class="special-dish-banner">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.1377963867667!2d-100.96148649999999!3d22.158826200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa1f464d2d10f%3A0xf08c4782bca2f6!2sMarcella%20Pasteler%C3%ADa!5e0!3m2!1ses-419!2smx!4v1747185272722!5m2!1ses-419!2smx" 
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 
-  <!-- 
-    - boton volver a inicio
+</section>
+
+ <!-- 
+    - blog
   -->
 
-  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-  </a>
+<section class="mini-blog-section text-center" aria-labelledby="blog-label">
+  <div class="mini-blog-container">
+    <p class="section-subtitle">Blog</p>
+    <h2 class="headline">Preguntanos</h2>
+
+    <div class="mini-blog-post">
+      <p>Si necesitas ayuda puedes preguntar a los demas</p>
+    </div>
+
+    <div class="mini-comments">
+      <h5>Comentarios</h5>
+      <ul id="mini-comment-list"></ul>
+
+      <input type="text" id="mini-name-input" placeholder="Tu nombre">
+      <textarea id="mini-comment-input" placeholder="Escribe un comentario"></textarea>
+      <button class="boton" onclick="addMiniComment()">Enviar</button>
+    </div>
+  </div>
+</section>
+
+<section style="height: 100px;"></section>
+
+
+  <!-- 
+    - chatbot
+
+  -->
+
+<script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      myLandbot = new Landbot.Popup({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2927886-ITJ6T2SNNC9M2Q93/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
 
   <!-- 
     - js
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/fyq.js"></script>
 
   <!-- 
     - iconos

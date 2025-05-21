@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Solicitud de Cotización - Pastelería Marcella</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #fff8f0; }
+    form { background: #fff; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto; box-shadow: 0 0 10px #ccc; }
+    h2 { text-align: center; color: #c71585; }
+    label { display: block; margin-top: 15px; }
+    input, select, textarea, button {
+      width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;
+    }
+    button { background: #c71585; color: white; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<h2>🎂 Solicitud de Cotización</h2>
+<form id="formCotizacion">
+  <label>Nombre completo: <input type="text" name="nombre" required></label>
+  <label>Teléfono: <input type="tel" name="telefono" pattern="[0-9]{10}" required></label>
+  <label>Tipo de evento:
+    <select name="evento" required>
+      <option value="">Seleccione</option>
+      <option value="Boda">Boda</option>
+      <option value="Cumpleaños">Cumpleaños</option>
+      <option value="Corporativo">Corporativo</option>
+      <option value="Otro">Otro</option>
+    </select>
+  </label>
+  <label>Invitados: <input type="number" name="invitados" min="1" required></label>
+  <label>Fecha del evento: <input type="date" name="fecha" required></label>
+  <label>Comentarios: <textarea name="comentarios"></textarea></label>
+  <button type="submit">Solicitar Cotización y Generar PDF</button>
+</form>
+
+<script>
+  document.getElementById("formCotizacion").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const { nombre, telefono, evento, invitados, fecha, comentarios } = this;
+
+    const doc = new jspdf.jsPDF();
+    doc.setFontSize(16);
+    doc.text("Resumen de Cotización - Pastelería Marcella", 20, 20);
+    doc.setFontSize(12);
+    doc.text(`Nombre: ${nombre.value}`, 20, 40);
+    doc.text(`Teléfono: ${telefono.value}`, 20, 50);
+    doc.text(`Evento: ${evento.value}`, 20, 60);
+    doc.text(`Invitados: ${invitados.value}`, 20, 70);
+    doc.text(`Fecha: ${fecha.value}`, 20, 80);
+    doc.text(`Comentarios: ${comentarios.value}`, 20, 90);
+    doc.text("Nos pondremos en contacto contigo pronto.", 20, 110);
+
+    doc.save("cotizacion_pasteleria.pdf");
+    this.reset();
+  });
+</script>
+
+</body>
+</html>

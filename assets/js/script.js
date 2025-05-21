@@ -168,3 +168,22 @@ window.addEventListener("mousemove", function (event) {
   }
 
 });
+
+//blog
+function addMiniComment() {
+  var name = document.getElementById("mini-name-input").value.trim();
+  var comment = document.getElementById("mini-comment-input").value.trim();
+  var list = document.getElementById("mini-comment-list");
+
+  if (name && comment) {
+    var li = document.createElement("li");
+    li.textContent = name + " dice: " + comment;
+    list.appendChild(li);
+
+    // Limpiar inputs después de enviar
+    document.getElementById("mini-name-input").value = "";
+    document.getElementById("mini-comment-input").value = "";
+  } else {
+    alert("Por favor ingresa tu nombre y comentario.");
+  }
+}
